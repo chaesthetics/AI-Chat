@@ -11,8 +11,8 @@ import { ChevronDown } from "lucide-react";
 const VersionSelector = () => {
     return (
         <DropdownMenu>
-        <DropdownMenuTrigger className="flex gap-2 items-center hover:bg-gray-50 px-3 py-2 rounded">
-            <span className="text-zinc-600 font-semibold">ChatGPT 4o mini</span>
+        <DropdownMenuTrigger className="flex gap-2 items-center hover:bg-gray-50 px-3 py-2 rounded outline-none">
+            <span className="text-zinc-600 font-semibold">AI-Chat 069 mini</span>
             <div className="text-gray-400"><ChevronDown size={18}/></div>
         </DropdownMenuTrigger>
         <DropdownMenuContent>

@@ -15,7 +15,7 @@ import RegisterForm from "./auth/registration-form";
 const SignupModal = () => {
     return (
         <AlertDialog>
-        <AlertDialogTrigger className="focus:outline-none">
+        <AlertDialogTrigger className="focus:outline-none hidden sm:hidden md:block">
             <div className="font-semibold px-4 py-2 rounded-full text-sm border focus:outline-none">Sign up</div>
         </AlertDialogTrigger>
         <AlertDialogContent className="py-0 px-0">

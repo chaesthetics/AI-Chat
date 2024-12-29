@@ -9,6 +9,7 @@ import {
 import Header from "@/components/auth/header";
 import Social from "@/components/auth/social";
 import BackButton from "@/components/auth/back-button";
+import { AlertDialogCancel } from "@radix-ui/react-alert-dialog";
 
 interface CardWrapperProps {
   children: React.ReactNode;
@@ -26,7 +27,7 @@ const CardWrapper = ({
   showSocial,
 }: CardWrapperProps) => {
   return (
-    <Card className="w-[400px] shadow-md">
+    <Card className="w-[300px] sm:w-[300px] md:w-[400px] shadow-md">
       <CardHeader>
         <Header label={headerLabel} />
       </CardHeader>
@@ -36,8 +37,9 @@ const CardWrapper = ({
           <Social />
         </CardFooter>
       )}
-      <CardFooter>
-        <BackButton label={backButtonLabel} href={backButtonHref} />
+      <CardFooter className="flex justify-center">
+        {/* <BackButton label={backButtonLabel} href={backButtonHref} /> */}
+        <AlertDialogCancel className="text-sm hover:underline text-zinc-500">Continue as guest</AlertDialogCancel>
       </CardFooter>
     </Card>
   );
