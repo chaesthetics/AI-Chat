@@ -17,7 +17,6 @@ export default function Home() {
   return (
     <div className="h-full w-screen flex flex-col overflow-hidden">
       <Navbar />
-
     </div>
   )
 }

@@ -16,12 +16,18 @@ const VersionSelector = () => {
             <div className="text-gray-400"><ChevronDown size={18}/></div>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem className="hover:bg-gray-100 animation-300 duration-300 hover:cursor-pointer">
+                ChatGPT-3.5
+            </DropdownMenuItem>
+            <DropdownMenuItem className="hover:bg-gray-100 animation-300 duration-300 hover:cursor-pointer">
+                ChatGPT-3.5 Turbo
+            </DropdownMenuItem>
+            <DropdownMenuItem className="hover:bg-gray-100 animation-300 duration-300 hover:cursor-pointer">
+                ChatGPT-4
+            </DropdownMenuItem>
+            <DropdownMenuItem className="hover:bg-gray-100 animation-300 duration-300 hover:cursor-pointer">
+                ChatGPT-4o
+            </DropdownMenuItem>
         </DropdownMenuContent>
         </DropdownMenu>
     )

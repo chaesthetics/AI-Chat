@@ -9,25 +9,16 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import LoginForm from "./auth/login-form";
   
 const LoginModal = () => {
     return (
         <AlertDialog>
-        <AlertDialogTrigger>
+        <AlertDialogTrigger className="focus:outline-none">
             <div className="bg-black text-white font-semibold px-4 py-2 rounded-full text-sm">Log in</div>
         </AlertDialogTrigger>
-        <AlertDialogContent>
-            <AlertDialogHeader>
-            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-            <AlertDialogDescription>
-                This action cannot be undone. This will permanently delete your account
-                and remove your data from our servers.
-            </AlertDialogDescription>
-            </AlertDialogHeader>
-            <AlertDialogFooter>
-            <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Continue</AlertDialogAction>
-            </AlertDialogFooter>
+        <AlertDialogContent className="py-0 px-0">
+               <LoginForm />
         </AlertDialogContent>
         </AlertDialog>
     )
